@@ -1,6 +1,0 @@
-README.md
-setup.py
-Better_file_system.egg-info/PKG-INFO
-Better_file_system.egg-info/SOURCES.txt
-Better_file_system.egg-info/dependency_links.txt
-Better_file_system.egg-info/top_level.txt
