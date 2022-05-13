@@ -1,4 +1,4 @@
-
+import os
 
 class MakeFile():
     def __init__(self, file):
@@ -45,8 +45,49 @@ class MakeFile():
         for l in range(len(lines)):
             linesNew += str(lines[l])+"\n"
         self.write(linesNew)
+
+class MakeFolder():
+    def __init__(self, name, basePath = ""):
+        self.path = str(basePath)+str(name)
+        self.name = name
+        self.basePath = basePath
+        if not os.path.exists(self.path):
+            os.mkdir(self.path)
+
+    def createPath(self):
+        self.path = self.basePath+self.name
+
+    def removeFolder(self):
+        if os.path.exists(self.path):
+            os.rmdir(self.path)
+        else:
+            print("folder dosn't exist")
+
+    def changeFolder(self, newName, newBasePath = ""):
+        self.path = str(newBasePath+newName)
+        self.basePath= newBasePath
+        self.name = newName
+        if not os.path.exists(self.path):
+            os.mkdir(self.path)
+        else:
+            pass
+
+
+    def rename(self, newName):
+        try:
+            if not os.path.exists(self.basePath+newName):
+                os.rename(self.path, (self.basePath+newName))
+                self.name = newName
+                self.createPath()
+            else:
+                print("folder already created")
+        except:
+            print("error in renaming")
+        
+        
         
 
 if __name__ == "__main__":
+
 
 

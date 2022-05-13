@@ -1,34 +1,30 @@
-from setuptools import setup, find_packages
-import codecs
-import os
+import pathlib
+from setuptools import setup
 
-here = os.path.abspath(os.path.dirname(__file__))
+# The directory containing this file
+HERE = pathlib.Path(__file__).parent
 
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = "\n" + fh.read()
+# The text of the README file
+README = (HERE / "README.md").read_text()
 
-VERSION = '0.0.1'
-DESCRIPTION = 'A simple package for files'
-LONG_DESCRIPTION = 'A simple package for files'
-
-# Setting up
+# This call to setup() does all the work
 setup(
-    name="better files",
-    version=1,
-    author="Tzur Soffer",
-    author_email="<tzur.soffer@gmail.com>",
-    description=DESCRIPTION,
+    name="Better file system",
+    version="1.0.2",
+    description="A better file system",
+    long_description=README,
     long_description_content_type="text/markdown",
-    long_description=long_description,
-    packages=find_packages(),
-    install_requires=[],
-    keywords=['python', 'better files', "file", "files", "file system"],
+    url="https://github.com/RandomTheFirst/Better-file-system",
+    author="Tzur Soffer",
+    author_email="tzur.soffer@gmail.com",
     classifiers=[
-        "Development Status :: 1 - Planning",
-        "Intended Audience :: Developers",
-        "Programming Language :: Python :: 3",
-        "Operating System :: Unix",
-        "Operating System :: MacOS :: MacOS X",
-        "Operating System :: Microsoft :: Windows",
-    ]
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10"
+    ],
+    packages=[],
+    include_package_data=True,
+    install_requires=[],
 )
