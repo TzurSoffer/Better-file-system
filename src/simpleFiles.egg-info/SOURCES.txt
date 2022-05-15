@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+src/simpleFiles/__init__.py
+src/simpleFiles/betterFileSystem.py
+src/simpleFiles.egg-info/PKG-INFO
+src/simpleFiles.egg-info/SOURCES.txt
+src/simpleFiles.egg-info/dependency_links.txt
+src/simpleFiles.egg-info/top_level.txt

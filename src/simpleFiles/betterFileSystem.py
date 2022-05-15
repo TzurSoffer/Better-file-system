@@ -37,6 +37,9 @@ class MakeFile():
         lines = f.split("\n")
         return(lines[line-1])
 
+    def readLine(self, line):
+        self.getLine(line)
+
     def changeLine(self, line, newLine):
         f = self.read()
         lines = f.split("\n")
@@ -88,6 +91,8 @@ class MakeFolder():
         
 
 if __name__ == "__main__":
+    pass
+
 
 
 

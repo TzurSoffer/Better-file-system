@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: simpleFiles
+Version: 1.0.7
+Summary: A better file system
+Home-page: https://github.com/RandomTheFirst/Better-file-system
+Author: Tzur
+Author-email: tzur.soffer@gmail.com
+Project-URL: Bug Tracker, https://github.com/RandomTheFirst/Better-file-system
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Better file system
+it makes writing to files easy
+
+#how to use
+import b
+####create a file######
+tfile = 
